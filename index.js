@@ -124,7 +124,7 @@
 //         await secFunction()
 //         await thirdFunction()
 //         console.log('Done')
-//     }
+//     } 
 //     catch(err){
 //         console.log(err)
 //     }
@@ -242,3 +242,19 @@ const personDetails = {
 	height:'172cm'
 }
 console.log(personDetails.height);
+
+
+
+
+// ================================= object print ===================================
+let address = {'street':'36chaurangi lines',city:"kolkata"}
+let person = {name:'bheem',role:'Batsman',address}
+let {name,role,address:{street}} = person
+console.log(name,role,street)
+
+
+
+// =======================Default Values With Object Properties ===================
+
+const book = {name:'bheem',topic:'Programming Language',Writer:'Bheem Sharma'}
+const {topic, Writer, isSold=false} = book
